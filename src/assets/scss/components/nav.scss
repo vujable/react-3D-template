@@ -1,0 +1,180 @@
+.mobile-nav {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    z-index: 10000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    transition: left 0.5s;
+    left: -110vw;
+    &.open {
+        left: -20px;
+    }
+}
+.mobile-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    > span {
+        &:hover {
+            filter: drop-shadow(0 0 0.5rem rgba(52,223,197,0.7));
+        }
+        padding: 20px;
+        font-size: 1.5em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+.exit-mobile-nav {
+    position: absolute;
+    font-size: 1.5em;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    padding: 50px;
+}
+.mobile-nav-footer {
+    color: #999999;
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 10%;
+    font-size: 1em;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    z-index: 1000;
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    filter: drop-shadow(0 0 2px black);
+
+    > span {
+        font-weight: bold;
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        top: 30px;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+#nav-icon1 {
+
+    filter: drop-shadow(0 0 1px black);
+    z-index: 10005;    
+    top: 30px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    @media screen and (max-width: 535px) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+#nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: white;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+    @media screen and (max-width: 535px) {
+        height: 3px;
+    }
+}
+
+#nav-icon1 span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+    top: 18px;
+    @media screen and (max-width: 535px) {
+        top: 12px;
+    }
+}
+
+#nav-icon1 span:nth-child(3) {
+    top: 36px;
+    @media screen and (max-width: 535px) {
+        top: 24px;
+    }
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    @media screen and (max-width: 535px) {
+        top: 12px;
+    }
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    @media screen and (max-width: 535px) {
+        top: 12px;
+    }
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.get-in-touch-mobile{
+    background: linear-gradient(to right, rgba(0, 209, 177, 1) 0%, rgba(39, 143, 198, 1) 98%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.get-in-touch {
+    background: linear-gradient(to right, rgba(0, 209, 177, 1) 0%, rgba(39, 143, 198, 1) 98%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,20 @@
+@import url(./helper.scss);
+
+@import url(./components/nav.scss);
+
+.canvas {
+    position: absolute;
+    top: 0;
+}
+
+.main-scene {
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
